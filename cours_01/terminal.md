@@ -77,7 +77,7 @@ Pour moi, pwd me renvoie :
 
 C'est comme dans l'explorateur en GUI, quand tu double-cliques sur felix, il te déplace dans le dossier felix qui est dans le dossier Users.
 
-ALERTE BONNE ASTUCE
+**ALERTE BONNE ASTUCE**
 
 pwd est généralement la première commande que l'on tape quand on arrive dans le terminal de quelqu'un car c'est idéal pour s'y retrouver. 
 
@@ -119,7 +119,7 @@ Tu te déplaceras dans le dossier nommé nomdudossier (s'il existe là où tu te
 
 Tu peux aussi te déplacer vers le dossier parent en faisant $ cd ..
 
-# ALERTE BONNE ASTUCE
+**ALERTE BONNE ASTUCE**
 
 Utiliser la touche TAB permet de faire de l'autocompletion, très pratique pour cette méthode. Aussi, faire cd + [ESPACE] + TAB + TAB affiche les dossiers disponibles.
 
