@@ -169,7 +169,7 @@ Excellente question. La commande git commit va ouvrir un fichier qui te demander
 
 ## **3.1.3.3. Exemple avec un petit projet**
 
-Comme il n'est pas aisé d'expliquer les commits, je te propose un petit pas à pas pour t'aider à comprendre la notion de git ☺ Nous allons prendre l'exemple d'un site de restaurant.
+Comme il n'est pas aisé d'expliquer les commits, je te propose un petit pas à pas pour t'aider à comprendre la notion de git Nous allons prendre l'exemple d'un site de restaurant.
 
 Commence par créer un dossier restaurant_website, puis mets-toi dans le dossier avec ton terminal.
 
@@ -596,7 +596,7 @@ $ git pull origin master
 
 ## **3.3. Les messages d'erreur**
 
-On ne va pas se leurrer, Git n'est pas facile à utiliser quand on débute... Avant de te précipiter et de maudire ton ordinateur, nous allons annoncer quelque chose : c'est normal d'avoir des erreurs, surtout quand on commence. C'est arrivé à TOUT le monde, et surtout à ceux qui sont à l'aise aujourd'hui ❤ Le secret, c'est de ne pas désespérer, et de résoudre tes soucis calmement, un à un. Comme tout développeur est passé par ce chemin, les réponses aux problèmes classiques pullulent sur Stack Overflow. Copie-colle ton message d'erreur, lis les réponses, essaie de les comprendre, et trouve la solution à ton problème.
+On ne va pas se leurrer, Git n'est pas facile à utiliser quand on débute... Avant de te précipiter et de maudire ton ordinateur, nous allons annoncer quelque chose : c'est normal d'avoir des erreurs, surtout quand on commence. C'est arrivé à TOUT le monde, et surtout à ceux qui sont à l'aise aujourd'hui Le secret, c'est de ne pas désespérer, et de résoudre tes soucis calmement, un à un. Comme tout développeur est passé par ce chemin, les réponses aux problèmes classiques pullulent sur Stack Overflow. Copie-colle ton message d'erreur, lis les réponses, essaie de les comprendre, et trouve la solution à ton problème.
 
  **EXEMPLE ILLUSTRÉ**
 
