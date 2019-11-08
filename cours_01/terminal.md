@@ -6,12 +6,12 @@ Accroche-toi à tes chaussettes, car nous allons maintenant découvrir les bases
 
 Voici la liste des questions auxquelles tu vas pouvoir répondre avec cette ressource :
 
-Qu'est-ce que le terminal ?
-Que veulent dire GUI et CLI ?
-Comment lancer un terminal ?
-Comment exécuter ses premières fonctions avec un terminal ?
-Pourquoi la notion de géographie est très importante dans un terminal ?
-Qu'est-ce que VIM et comment s'en servir ?
+- Qu'est-ce que le terminal ?
+- Que veulent dire GUI et CLI ?
+- Comment lancer un terminal ?
+- Comment exécuter ses premières fonctions avec un terminal ?
+- Pourquoi la notion de géographie est très importante dans un terminal ?
+- Qu'est-ce que VIM et comment s'en servir ?
 
 # 2. Historique
 
@@ -25,20 +25,19 @@ En gros, c'est une version texte de l'explorateur de fichiers : on peut ouvrir d
 
 ## 3.1. Qu'est-ce que le terminal ?
 
-Le terminal est un outil intimidant aux premiers abords, mais pas si compliqué au final. J'ai réalisé une vidéo pour l'expliquer :
-
-
+Le terminal est un outil intimidant aux premiers abords, mais pas si compliqué au final. J'ai réalisé une vidéo pour l'expliquer : [vidéo](https://youtu.be/myz_6xrDwR4)
 
 
 ## 3.2. Comment le lancer ?
 
 ## 3.2.1. Sur macOS
+
 CMD + SPACE, puis écrire Terminal (ou iTerm), Enter.
 
 ## 3.2.2. Sur Linux
 CTRL + ALT + T.
 
-ALERTE BONNE ASTUCE
+Alerte bonne astuce
 
 Si tu utilises Linux, passe ton terminal en anglais. Ça va vraiment t'aider lorsqu'il te renverra des erreurs. En effet, comme l'anglais est la langue d'internet, la majorité des gens ayant eu ton problème vont le poster en anglais. Tu auras ainsi 100 fois plus de résultats sur Google qu'avec une erreur postée en français.
 
@@ -62,7 +61,7 @@ Pour faire marcher le terminal, rien de plus simple : il suffit de rentrer le te
 $ echo "Hello world !"
 (je commence toutes les commandes de terminal avec un $. C'est une convention qui aide à reconnaître les commandes de CLI, mais qui ne fait pas partie de la commande. Enlève donc bien le $ au moment de tester !)
 
-Si tu exécutes cette commande, le terminal devrait te renvoyer Hello world ! (cette phrase est un grand classique de la programmation). Et là, BOUM ! Tu viens d'exécuter ta première commande de terminal 🎉.
+Si tu exécutes cette commande, le terminal devrait te renvoyer Hello world ! (cette phrase est un grand classique de la programmation). Et là, BOUM ! Tu viens d'exécuter ta première commande de terminal .
 Maintenant nous allons voir quelques commandes basiques.
 
 ## 3.3.1. PWD
@@ -70,15 +69,16 @@ Maintenant nous allons voir quelques commandes basiques.
 pwd est l'acronyme de Print Working Directory, une commande affichant le dossier dans lequel tu es actuellement.
 
 $ pwd
-Pour moi, pwd me renvoie :
+Pour moi, pwd me renvoie : /Users/felix
 
-/Users/felix
 C'est comme dans l'explorateur en GUI, quand tu double-cliques sur felix, il te déplace dans le dossier felix qui est dans le dossier Users.
 
 ALERTE BONNE ASTUCE
 
-pwd est généralement la première commande que l'on tape quand on arrive dans le terminal de quelqu'un car c'est idéal pour s'y retrouver ✌️
-3.3.2. LS
+pwd est généralement la première commande que l'on tape quand on arrive dans le terminal de quelqu'un car c'est idéal pour s'y retrouver 
+
+## 3.3.2. LS
+
 ls est le diminutif de list. Cette fonction affiche les fichiers et dossiers situés dans mon dossier actuel.
 
 $ ls
@@ -90,6 +90,7 @@ Downloads/    Movies/
 Dans le terminal, nous pouvons ajouter des options à la plupart des fonctions en utilisant la syntaxe $ fonction -option. Par exemple, je peux faire ls -a (a pour "all"), ce qui a pour effet d'afficher aussi les fichiers commençant par un . (fichiers de devs en général). Je peux faire ls -l pour afficher la liste au format long. Et je peux même combiner les deux en faisant ls -al.
 
 ## 3.3.3. MAN
+
 man est le diminutif de manual. Man lance un programme permettant de lire le manuel d'une fonction précise. Pratique pour connaître toutes ses spécificités ! Pour s'en servir, il suffit de taper : man fonction. Par exemple, pour afficher le manuel de la commande ls, je dois taper :
 
 $ man ls
@@ -103,7 +104,7 @@ Tu vas donc devoir te déplacer de dossiers en dossiers pour ouvrir et interagir
 
 ## 3.5. CD
 
-cd est l'acronyme de Change Directory. Cette commande permet de naviguer entre dossiers. Il s'agit en quelque sorte d'un double-clic sur un dossier 😁
+cd est l'acronyme de Change Directory. Cette commande permet de naviguer entre dossiers. Il s'agit en quelque sorte d'un double-clic sur un dossier
 
 $ cd nomdudossier
 Tu te déplaceras dans le dossier nommé nomdudossier (s'il existe là où tu te trouves).
@@ -132,26 +133,33 @@ $ cp fichier_à_copier lieu_de_destination
 Pour déplacer (couper) un fichier ou un dossier d'un endroit vers un autre, il suffit de rentrer :
 
 mv [fichier_à_déplacer] [lieu_de_destination]
-🚀 ALERTE BONNE ASTUCE
+
+## ALERTE BONNE ASTUCE
 
 mv (diminutif de "move") est très pratique pour renommer un fichier. Imaginons que tu as créé un fichier "hello.rv" au lieu de "hello.rb". Oups, malheur ! Heureusement, faire $ mv hello.rv hello.rb résout ce petit incident en quelques coups de clavier !
-3.6.4. Remove
+
+## 3.6.4. Remove
+
 Supprimer un fichier :
 
 $ rm nomdufichier
 Il est possible d'effacer un dossier ainsi que son contenu en ajoutant -r (comme "recursion") en option :
 
 $ rm -r nomdudossier
-📚 INSTANT CULTURE GÉ
+
+**INSTANT CULTURE GÉ**
 
 rm est à l'origine d'une blague vieille comme le monde. En effet, ajouter l'option -f permet de forcer la suppression d'un fichier, même s'il est important pour l'ordinateur. D'autre part, finir par / ou * dit à votre ordinateur d'inclure absolument tous les fichiers. Ainsi, si tu tapes $ rm -rf / ou $ rm -rf * dans ton terminal, tu dis à ce dernier de tout prendre et de tout effacer, en forçant les barrières. En plus, figure-toi que rm est très rapide. Il effacera donc l'intégralité de ton ordinateur en quelques secondes à peine ! Conclusion : à ne jamais jamais jamais faire.
-3.6.5. Vim
-Vim est l'un des éditeurs de texte les plus respectés au monde. Comme il passe uniquement par le terminal, il se marie extrêmement bien avec cet outil. Et comme il utilise juste le clavier, ses raccourcis permettent d'aller vraiment vite pour qui ose grimper la très rude courbe d'apprentissage (quelques semaines à plein temps). De ce fait, je te montrerai vim pour ta culture G, mais te demanderai de passer par un autre éditeur de texte 😉
+
+## 3.6.5. Vim
+
+Vim est l'un des éditeurs de texte les plus respectés au monde. Comme il passe uniquement par le terminal, il se marie extrêmement bien avec cet outil. Et comme il utilise juste le clavier, ses raccourcis permettent d'aller vraiment vite pour qui ose grimper la très rude courbe d'apprentissage (quelques semaines à plein temps). De ce fait, je te montrerai vim pour ta culture G, mais te demanderai de passer par un autre éditeur de texte 
 
 $ vim nomdufichier
 Cette commande permet d'ouvrir vim sur le fichier nomdufichier et de l'éditer. Pour quitter vim, il faut rentrer :q!.
 
-3.7. Autres astuces
+## 3.7. Autres astuces
+
 CTRL + C annule la fonction en cours. Pratique quand on a une boucle infinie !
 
 La casse est très importante, idem pour les espaces.
@@ -160,7 +168,8 @@ Il y a des raccourcis pratiques, comme par exemple CTRL + U qui efface la ligne 
 
 Les touches du haut et du bas permettent de naviguer dans l'historique des commandes. Super pratique pour exécuter à nouveau une commande que tu viens de taper.
 
-4. Points importants à retenir
+# 4. Points importants à retenir
+
 Voici les points à retenir de la ressource :
 
 Pour lancer le terminal sur Linux : CTRL + ALT + T ; pour le lancer sur macOS : CMD + SPACE, puis écrire Terminal (ou iTerm) et presser la touche Enter ; pour Windows il te faudra trouver un subterfuge : Cygwin est la solution parfaite pour les débutants.
@@ -174,7 +183,9 @@ cp permet de copier un fichier.
 mv permet de déplacer un fichier ou un dossier.
 rm permet de supprimer un fichier.
 rm -r permet de supprimer un dossier et son contenu.
-5. Aller plus loin
+
+## 5. Aller plus loin
+
 Voici un excellent cours express pour avoir quelques bases concernant l'utilisation du terminal. Il est un peu similaire au mien, mais aborde d'autres sujets intéressants tels que le PATH.
 
 Viking Code School ont aussi fait un cours sur le pimp de terminal pour y intégrer de couleurs de BGs.
