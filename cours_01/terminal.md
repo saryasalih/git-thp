@@ -37,7 +37,7 @@ CMD + SPACE, puis écrire Terminal (ou iTerm), Enter.
 ## 3.2.2. Sur Linux
 CTRL + ALT + T.
 
-- ALERTE BONNE ASTUCE
+**ALERTE BONNE ASTUCE**
 
 Si tu utilises Linux, passe ton terminal en anglais. Ça va vraiment t'aider lorsqu'il te renverra des erreurs. En effet, comme l'anglais est la langue d'internet, la majorité des gens ayant eu ton problème vont le poster en anglais. Tu auras ainsi 100 fois plus de résultats sur Google qu'avec une erreur postée en français.
 
@@ -182,7 +182,7 @@ Les touches du haut et du bas permettent de naviguer dans l'historique des comma
 
 # 4. Points importants à retenir
 
-Voici les points à retenir de la ressource :[]
+Voici les points à retenir de la ressource :
 
 - Pour lancer le terminal sur Linux : CTRL + ALT + T ; pour le lancer sur macOS : CMD + SPACE, puis écrire Terminal (ou iTerm) et presser la touche Enter ; pour Windows il te faudra trouver un subterfuge : [Cygwin](https://www.youtube.com/watch?v=YogNpgcKY9A&feature=youtu.be) est la solution parfaite pour les débutants.
 - man permet de lancer le manuel des fonctions.
